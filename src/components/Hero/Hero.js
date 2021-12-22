@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; 
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
@@ -9,13 +10,20 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
+          Hey there—<br />
+          I'm Anshuman
         </SectionTitle>
         <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
-        </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <br></br>
+        I'm a Student, pursing my CSE degree from IIIT-Guwahati 
+        <br></br>I'm a Enthusiastic Software Developer
+        <br></br>Looking for a Golden opportunity to prove my Hardwork
+        <br></br>
+        <br></br>
+        </SectionText >
+        <Link href="#about">
+        <Button onClick={props.handleClick}>Know More</Button>
+        </Link>
       </LeftSection>
     </Section>
   </>
